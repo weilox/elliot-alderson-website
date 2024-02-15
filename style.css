@@ -1,0 +1,321 @@
+/* Setup */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::selection {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    height: 490px;
+    background-image: url('./images/hellofriend.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h2 {
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 15px;
+}
+
+/* Content */
+
+section:nth-child(1) h2,
+section:nth-child(2) h2 {
+    display: flex;
+    justify-content: center;
+    font-weight: 200;
+    letter-spacing: 12px;
+    margin: 60px 0px 60px 0px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(1) p,
+section:nth-child(2) p {
+    width: 1300px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+    line-height: 28px;
+}
+
+.elliot {
+    height: 600px;
+    width: 1300px;
+    margin: auto;
+    margin-top: 100px;
+    background-image: url("./images/elliot.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Mr robot and elliot */
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:nth-child(1) {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image1 {background-image: url("./images/mrrobot.png");}
+.image2 {background-image: url("./images/elliot2.png");}
+
+.content {
+    width: 1000px;
+    height: 300px;
+}
+
+.content h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    letter-spacing: 5px;
+    color: #333;
+    font-weight: 300;
+}
+
+.content p {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    color: #333;
+    padding: 0px 100px 0px 100px;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: 1.3px;
+    line-height: 28px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 100px;
+    height: 90px;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer h2 {
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+footer h2 span {
+    color: gold;
+}
+
+.special {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 1370px) {
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 1000px;
+    }
+
+    .elliot {
+        width: 1000px;
+    }
+
+    .image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .content {
+        width: 700px;
+    }
+}
+
+@media (max-width: 1060px) {
+    header h2 {
+        font-size: 30px;
+    }
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 800px;
+    }
+
+    .elliot {
+        width: 800px;
+    }
+
+    .image {
+        width: 250px;
+        height: 250px;
+    }
+
+    .content {
+        width: 550px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 835px) {
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 600px;
+    }
+
+    .elliot {
+        width: 600px;
+    }
+
+    .box {
+        flex-direction: column;
+    }
+
+    .special {
+        display: block;
+    }
+
+    .second {
+        display: none;
+    }
+
+    .content p {
+        padding: 0px;
+    }
+
+    .box:nth-child(1) {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 655px) {
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 400px;
+    }
+
+    .elliot {
+        width: 400px;
+    }
+
+    .content {
+        width: 400px;
+    }
+    header h2 {
+        font-size: 22px;
+        letter-spacing: 8px;
+    }
+}
+
+@media (max-width: 655px) {
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 400px;
+    }
+
+    .elliot {
+        width: 400px;
+    }
+
+    .content {
+        width: 400px;
+    }
+    header h2 {
+        font-size: 22px;
+        letter-spacing: 8px;
+    }
+}
+
+@media (max-width: 470px) {
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 300px;
+    }
+
+    .elliot {
+        width: 300px;
+    }
+
+    .content {
+        width: 250px;
+    }
+
+    .box {
+        height: 780px;
+    }
+
+    header h2 {
+        font-size: 22px;
+        letter-spacing: 8px;
+    }
+    header h2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+}
+
+@media (max-width: 348px) {
+    section:nth-child(1) p,
+    section:nth-child(2) p {
+        width: 250px;
+    }
+
+    .elliot {
+        width: 250px;
+    }
+
+    .content {
+        width: 250px;
+    }
+
+    .box {
+        height: 780px;
+    }
+
+    header h2 {
+        font-size: 22px;
+        letter-spacing: 8px;
+    }
+    header h2 {
+        font-size: 16px;
+        letter-spacing: 5px;
+    }
+}
